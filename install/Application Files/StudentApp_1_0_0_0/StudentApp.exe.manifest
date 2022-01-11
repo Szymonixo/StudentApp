@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="StudentApp.exe" version="1.0.0.0" publicKeyToken="f50877333cfea835" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="StudentApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="StudentApp.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opcje manifestu kontroli konta użytkownika
+          Jeśli chcesz zmienić poziom kontroli konta użytkownika systemu Windows, zastąp węzeł 
+          requestedExecutionLevel jednym z następujących.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Jeśli chcesz użyć wirtualizacji plików i rejestru do celów zgodności wstecznej, 
+         usuń węzeł requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.dll" size="1021440">
+      <assemblyIdentity name="CefSharp" version="96.0.180.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>O+lupeuyyxzYF6K2V/D5wlmgOrd/B/S3ol4lvMaXO1Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.Core.dll" size="37376">
+      <assemblyIdentity name="CefSharp.Core" version="96.0.180.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8xAcDa2l55jAXBZrDP8ndQWqFJ0bahKZPwCZIxhjqdE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.Core.Runtime.dll" size="1420288">
+      <assemblyIdentity name="CefSharp.Core.Runtime" version="96.0.180.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PeVl6DRGKj+5g5OcO0/kMTbEpxwzL1tkrcu1khuiFtc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CefSharp.WinForms.dll" size="47104">
+      <assemblyIdentity name="CefSharp.WinForms" version="96.0.180.0" publicKeyToken="40C4B6FC221F4138" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>IAAryBEIVHDLHNuh543n4CcNm8zdiEcOW9hNHPemwTA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="StudentApp.exe" size="6031328">
+      <assemblyIdentity name="StudentApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>oVtyMyjyZg/ICPR1/IA5KbKoL8h3SaS+wGxOnrluQtY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Resources\sbtn.txt" size="13">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fC/D96aLbnE7JW35dK7x8/qetO3R8Gvl85dmyv4Hk+Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\sbtnurl.txt" size="17">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+WsbhrwpFWrULKmvDFR0S4rC5hxOo6fLQzGVW2z3od0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="StudentApp.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SZYMONIXO-2007-\Szymo" issuerKeyHash="771a00fa333d533afd2bdf3ca7a94c1bd02ca2ac" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SUO2KvfJEMO6Odpd/MuPE8QttF/Vi4MTbQ7PRsVd4x8=</DigestValue></Reference></SignedInfo><SignatureValue>AP8HximChVyQO5YNWkc9Mv0GGupovt3rCqVSPx963uolnda23eZpicY64yusZfJsOPsqgiCrXvHSG5k0cWIYlrr5XKoq8qU+8f+sR4KuA3yNPphp4Ox9x+gmbtyixzBFN0SyFHZYQRpj0DE1ObSWpJ/WT+1TDRuFtsjNFh7KAmI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>7qs/7B8l8f8+Ex0/huTFduJxvRKKq/DAGY79J5Hc4QeDJLkqgaWGt4nR3WCFaggeGhjYbJ+0yoNFqQbOuL0XzQITnmPVz76J8e6TcnYVZ5I6PwB2Gxf8A6sAtjkRn6271asGfj/ynI2kR9q75NEOwvs3SlATjaW6M81lbxKvFX0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1fe35dc546cf0e6d13838bd55fb42dc4138fcbfc5dda39bac310c9f72ab64349" Description="" Url=""><as:assemblyIdentity name="StudentApp.exe" version="1.0.0.0" publicKeyToken="f50877333cfea835" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SZYMONIXO-2007-\Szymo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5aIy3s1BqtHsq2gQXZDKFjx2LmIcorztMNMkm25zm/Q=</DigestValue></Reference></SignedInfo><SignatureValue>WDwjYiPM82xz/LEwYcuix95/ToiCBZxiGHGRrSx029OoRKAq99bJnDn7DybKCrQR4rix+Pysv4ZHSNT0iJTiHgZpUwKgoeLvTp6JXNbDs/VcmFILFoXoxA6IWEa851b73Hq9ckZuwBsGShGJq/iMHb6//qSL0d1ax3ZJS0hII4U=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>7qs/7B8l8f8+Ex0/huTFduJxvRKKq/DAGY79J5Hc4QeDJLkqgaWGt4nR3WCFaggeGhjYbJ+0yoNFqQbOuL0XzQITnmPVz76J8e6TcnYVZ5I6PwB2Gxf8A6sAtjkRn6271asGfj/ynI2kR9q75NEOwvs3SlATjaW6M81lbxKvFX0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQI3QNdBFS9LVMsVjd3qhufjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioAUwBaAFkATQBPAE4ASQBYAE8ALQAyADAAMAA3AC0AXABTAHoAeQBtAG8wHhcNMjIwMTExMjEwNjA3WhcNMjMwMTEyMDMwNjA3WjA1MTMwMQYDVQQDHioAUwBaAFkATQBPAE4ASQBYAE8ALQAyADAAMAA3AC0AXABTAHoAeQBtAG8wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAO6rP+wfJfH/PhMdP4bkxXbicb0SiqvwwBmO/SeR3OEHgyS5KoGlhreJ0d1ghWoIHhoY2GyftMqDRakGzri9F80CE55j1c++ifHuk3J2FWeSOj8AdhsX/AOrALY5EZ+tu9WrBn4/8pyNpEfau+TRDsL7N0pQE42lujPNZW8SrxV9AgMBAAEwDQYJKoZIhvcNAQELBQADgYEAxZyk0ugzzVdrS83p02K48GpyTqmEgh+lvwf1YibwKSZrpX5W0mNT7xV8DNa12FiC1iXuGSYn6m3HsDmhouyk6Jj3GW9gER+1pq6+xJX+DP8Hj/zCL0rOIXdTo/wFA5G4jW6nYwR2CN09v4O5SLFLJhrw7pkJWl6yJE3ALhng1WE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
