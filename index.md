@@ -1,4 +1,4 @@
-## Witaj Uczniu!
+## StudentApp
 
 You can use the [editor on GitHub](https://github.com/Szymonixo/StudentApp/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
@@ -6,8 +6,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 Lorem ipsum dolor sit amet.
-
-[Click me](http://www.google.com){: .btn}
+{% include button.html url="http://www.google.com" %}
 
 ### Markdown
 
